@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="card text-center">
+    <div class="card-header">
+      حول التاريخ الميلادي إلى هجري
+    </div>
+    <div class="card-body">
+      <input type="date" [(ngModel)]="gregDate">
+      <button (click)="convertDate()">حول</button>
+      <input type="text" value="{{hijriDate}}" readonly>
+
+      <p>اليوم: {{day}}</p>
+    </div>
+  </div>
+</div>
